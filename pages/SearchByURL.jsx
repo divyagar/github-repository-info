@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useHistory } from "react-router";
+import { useRouter } from "next/router";
 
 export const SearchByURL = () => {
-  const history = useHistory();
+  const router = useRouter();
   const [url, setUrl] = React.useState("");
   const [invalid, setInvalid] = React.useState(false);
 
@@ -15,7 +16,7 @@ export const SearchByURL = () => {
       return;
     }
 
-    history.push(`/repo/${array[2]}/${array[3]}`);
+    router.push(`/repo/${array[2]}/${array[3]}`);
   };
 
   return (

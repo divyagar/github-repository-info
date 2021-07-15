@@ -21,21 +21,26 @@ export const LanguagesInfo = ({ heading, url, errorMsg }) => {
         setShowInfo={setShowInfo}
         heading={heading}
       />
-
-      {showInfo && Object.keys(info).length > 0 && (
+      {showInfo && (
         <div className="md:px-10 py-3 border-t-2 border-purpleLighter">
-          {Object.keys(info).map((key) => {
-            return (
-              <div className="flex items-center">
-                <div className="w-1/2 mr-3">
-                  <h5 className="text-xs">{key}</h5>
-                </div>
-                <div className="w-1/2 mr-3 text-right">
-                  <p className="">{info[key]}</p>
-                </div>
-              </div>
-            );
-          })}
+          {Object.keys(info).length > 0 ? (
+            <div>
+              {Object.keys(info).map((key) => {
+                return (
+                  <div className="flex items-center">
+                    <div className="w-1/2 mr-3">
+                      <h5 className="text-xs">{key}</h5>
+                    </div>
+                    <div className="w-1/2 mr-3 text-right">
+                      <p className="">{info[key]}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            <div className="text-center"> No language used </div>
+          )}
         </div>
       )}
     </div>

@@ -55,7 +55,7 @@ function RepoInfo() {
       <div className="uppercase">No repository found</div>
     </div>
   ) : (
-    <div className="tracking-wider flex-grow">
+    <div className="tracking-wider flex-grow mx-3 md:mx-0">
       <div className="border-b-2 border-purpleLighter pb-5">
         <div className="grid grid-cols-1 md:grid-cols-2 text-left text-gray-300 text-sm">
           <div className="col-span-1">
@@ -122,7 +122,7 @@ function RepoInfo() {
         </div>
       </div>
 
-      <div className="mt-1 border-b-2 border-purpleLighter py-5 text-sm">
+      <div className="mt-1 border-b-2 border-purpleLighter py-5 text-sm text-center">
         <span className="uppercase">About :</span>{" "}
         {repoInfo?.description || "---"}
       </div>
