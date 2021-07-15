@@ -19,9 +19,9 @@
         "react"
     ],
     "rules": {
-    },
-    "workbench.colorCustomizations": {
-        "editorError.foreground": "#ddcc00"
+        "react/prop-types": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/jsx-props-no-spreading": "off"
     }
 
 }

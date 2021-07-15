@@ -1,10 +1,13 @@
 import React from "react";
 
-export const InfoHeader = ({ showInfo, setShowInfo, heading }) => {
+export default function InfoHeader({ showInfo, setShowInfo, heading }) {
   return (
     <div
       className="flex justify-between items-center cursor-pointer my-2"
       onClick={() => setShowInfo((value) => !value)}
+      onKeyDown={() => setShowInfo((value) => !value)}
+      tabIndex={0}
+      role="button"
     >
       <h3 className="text-lg">{heading}</h3>
       {showInfo && (
@@ -36,4 +39,4 @@ export const InfoHeader = ({ showInfo, setShowInfo, heading }) => {
       )}
     </div>
   );
-};
+}

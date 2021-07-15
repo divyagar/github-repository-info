@@ -1,9 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useHistory } from "react-router";
 import { useRouter } from "next/router";
 
-export const SearchByName = () => {
+export default function SearchByName() {
   const history = useRouter();
   const [repo, setRepo] = React.useState("");
   const [owner, setOwner] = React.useState("");
@@ -47,4 +46,4 @@ export const SearchByName = () => {
       </form>
     </motion.div>
   );
-};
+}

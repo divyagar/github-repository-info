@@ -1,11 +1,11 @@
 import React from "react";
 import Head from "next/head";
-import { SearchByURL } from "./SearchByURL";
-import { SearchByName } from "./SearchByName";
+import SearchByURL from "./SearchByURL";
+import SearchByName from "./SearchByName";
 
 export default function Home() {
   const [searchByURL, setSearchByURL] = React.useState(true);
-  let text = searchByURL
+  const text = searchByURL
     ? "Search by owner and repository name"
     : "Search by respository URL";
 
@@ -21,6 +21,7 @@ export default function Home() {
         </div>
         <div>
           <button
+            type="submit"
             onClick={() => setSearchByURL((value) => !value)}
             className="bg-purple rounded-lg px-7 py-3 mx-5 text-xl"
           >

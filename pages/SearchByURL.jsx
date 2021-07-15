@@ -1,17 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useHistory } from "react-router";
 import { useRouter } from "next/router";
 
-export const SearchByURL = () => {
+export default function SearchByURL() {
   const router = useRouter();
   const [url, setUrl] = React.useState("");
   const [invalid, setInvalid] = React.useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const array = url.split("/").filter((str) => str != "");
-    if (array.length != 4) {
+    const array = url.split("/").filter((str) => str !== "");
+    if (array.length !== 4) {
       setInvalid(true);
       return;
     }
@@ -48,4 +47,4 @@ export const SearchByURL = () => {
       </form>
     </motion.div>
   );
-};
+}
