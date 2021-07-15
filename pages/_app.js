@@ -32,6 +32,15 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </div>
       </main>
+
+      <footer className="text-center bg-purpleLight text-white py-3 text-xs">
+        <div>
+          <a href="https://github.com/divyagar/github-repository-info">
+            {" "}
+            Github repository{" "}
+          </a>
+        </div>
+      </footer>
     </>
   );
 }
