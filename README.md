@@ -1,3 +1,3 @@
-# Next.js 
+# Github repository info
 
-A next js starter repository with prettier, eslint and tailwindcss configured.
+A simple web application to find basic information about a github repository.

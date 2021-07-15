@@ -19,5 +19,9 @@
         "react"
     ],
     "rules": {
+    },
+    "workbench.colorCustomizations": {
+        "editorError.foreground": "#ddcc00"
     }
+
 }
