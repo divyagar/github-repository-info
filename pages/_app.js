@@ -6,6 +6,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <script
+          data-ad-client="ca-pub-5980712732723248"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
           rel="stylesheet"
