@@ -1,5 +1,5 @@
 
-# Github repository information
+# Github Repository Information
 
 A simple web application to find basic information about a github repository.
 
